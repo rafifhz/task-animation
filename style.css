@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  background-image: url(./lemon.jpg);
+  background-size: cover;
+}
+.Lemon{
+  position: relative;
+}
+h2{
+  position: absolute;
+  transform:translate(-50%,-50%) ;
+  font-size: 200px;
+
+}
+
+h2:nth-child(1){
+  color: #fff;
+
+        -webkit-text-stroke-width: 2px orange
+        ;
+
+}
+h2:nth-child(2){
+  color: orange;
+  animation:le 4s ease-in-out infinite;
+  }
+
+
+
+@keyframes le{
+  0%,100%{clip-path: polygon(0% 58%, 20% 54%, 41% 53%, 40% 52%, 51% 58%, 65% 60%, 80% 56%, 90% 52%, 100% 49%, 99% 99%, 0% 100%, 0 60%);
+  }
+  50%{clip-path: polygon(0% 58%, 8% 65%, 18% 66%, 37% 68%, 53% 66%, 69% 57%, 81% 53%, 91% 48%, 100% 41%, 99% 99%, 0% 100%, 0 60%);
+  }
+}
